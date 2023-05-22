@@ -12,7 +12,7 @@ This template was developed using Vite.js, DaisyUI (Tailwind CSS Components), an
 Clone project:
 
 ```bash
-https://github.com/rahxd1/simple-vite-template-vanilla
+git@github.com:rahxd1/simple-vite-template-vanilla.git
 ```
 
 Install:
