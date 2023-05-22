@@ -1,0 +1,7 @@
+.mySwiper {
+    .swiper-slide {
+        div {
+            @apply text-center text-lg flex justify-center items-center h-96;
+        }
+    }
+}
