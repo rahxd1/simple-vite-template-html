@@ -1,24 +1,28 @@
 import { defineConfig } from "vite";
+import { resolve } from "path";
+
+const root = resolve(__dirname, "src");
+const outDir = resolve(__dirname, "dist");
 
 export default defineConfig({
     // pages: {
-    //     "/about": {
-    //         entry: "src/about.html",
-    //     },
     //     "/contact": {
-    //         entry: "src/contact.html",
+    //         entry: "/src/contact/index.html",
     //     },
     // },
-    base: "./",
-    server: {
-        open: "/index.html",
+    root,
+    optimizeDeps: {
+        include: ["linked-dep"],
     },
+
     build: {
-        outDir: "../public",
+        outDir,
+        emptyOutDir: true,
+        rollupOptions: {
+            input: {
+                main: resolve(root, "index.html"),
+                contact: resolve(root, "contact", "index.html"),
+            },
+        },
     },
-    root: "src",
-    // esbuild: {
-    //     jsxFactory: "h",
-    //     jsxFragment: "Fragment",
-    // },
 });
