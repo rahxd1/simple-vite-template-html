@@ -18,8 +18,25 @@ git@github.com:rahxd1/simple-vite-template-vanilla.git
 Install:
 
 ```bash
-cd simple-vite-template-html
+cd simple-vite-template-vanilla
 
 npm install
+```
+
+Run dev:
+
+```bash
 npm run dev
 ```
+
+Run build:
+
+```bash
+npm run build
+```
+
+![image](https://drive.google.com/uc?export=view&id=1Mn0uoqt9QVaStV5hAg0_YDCVg7M7YTYF)
+
+![image](https://drive.google.com/uc?export=view&id=1R31pmCHvEfHe1oUiu0z_CajG4vMnGerz)
+
+![image](https://drive.google.com/uc?export=view&id=1qNWPg43PchfsaZfVE8viiwTryQgRshIt)
